@@ -1,0 +1,69 @@
+/* COLORES */
+/* COLORES LITERALES (por su nombre)    res,yellow,green,....
+    COLORES HEXADECIMAL #000000 #ffffff 
+    COLORES RGB (rgb(#(red),#(green),#(blue));
+            el numero maximo en rgb en 255           
+    COLORES RGBA  (rgba(#red,#green,#blue,#0-1alpha));
+        CON TRANSPARENCIA EL ALPHA PARA IMAGENES DE FONDO
+    COLORES HSL   hsl((0-360)matiz,(0%-100%)saturacion,(0%-100%)luminacidad);
+    COLORES HSLA  hsla(matiz,saturacion,luminosidad,ALPHA)
+    
+    DEGRADADOS!!
+    linear-gradient(to right, yellow,black)
+
+    */
+    .header{
+        width: 100%;
+        height: 75vh; /*75%*/
+        background-color:   green;/*color de fondo*/
+        background-image: url(../img/chrome.png); 
+        /*si es que es una imagen png entonces se combinara con el color de fondo*/
+        background-repeat: no-repeat; 
+     /* esta imagen no se repite
+        background-repeat: repeat-x;
+            repite en el eje x
+        background-size: cover;
+              se adecua al contenedor
+        background-position:  top 20px right -20px;
+             mueve la imagen pixeles 
+             
+    MULTIPLES IMAGENES 
+        background-image: url(../img/chrome.png), url(../img/chrome.png);
+        background-repeat: no repeat, repeat-x;
+        background-size: cover, 300px 300px; 
+             */
+        background-position: center center;
+    }
+    
+    .uno,.dos,.cuatro,.cinco{
+        width: 90%;
+        height: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .uno{
+        background: linear-gradient(150deg,red,green);
+        /*degrada el color 
+        45deg = 45 grados
+        */ 
+    }
+    .dos{
+        background-color: blue;
+    }
+    .cuatro{
+        background-color: yellow;
+    }
+    .cinco{
+        background-color: cyan;
+    }
+    
+    .separador{
+        width: 100%;
+        height: 450px;
+        background-color: cornflowerblue;
+        background-image: url(../img/separador.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        /*la imagen esta quieta si tu te mueves */
+    }
